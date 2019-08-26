@@ -1,0 +1,590 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('./pictures/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Monda', sans-serif;
+    color: #060669;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: none;
+    padding: none;
+    margin: none;
+    height: 100%;
+    text-shadow: 2px 2px #284B63;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 60%; 
+}
+
+main {
+    width: 85%;
+    height: 425px;
+    background-color: rgba(250,250,255,0.6);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main h2 {
+    text-align: center;
+}
+
+form {
+    border: none;
+    height: 75%;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+fieldset button{
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 90%;
+    width: 90%;
+}
+
+label {
+    border-radius: 7px;
+}
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 60%;
+}
+
+.start {
+    display: none;
+}
+
+.startText {
+    display: flex;
+    flex-direction: column;
+    background-image: url('./pictures/starting-page-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.startText h1 {
+    font-size: 25px;
+    text-align: center;
+    color: #FAFAFF;
+    text-shadow: 2px 2px #060669;
+}
+
+.startText button {
+    border: 0px;
+    font-family: 'Monda', sans-serif;
+    color: #060669;
+    border-radius: 7px 7px;
+    background-color: rgba(250,250,255,0.7);
+    font-size: 25px;
+    width: 75%;
+    align-self: center;
+}
+
+.running-man-logo {
+    height: 85%;
+    width: 55%;
+}
+
+.question {
+    font-size: 16px;
+    padding: 5px;
+    text-shadow: 1px 1px #FAFAFF;
+}
+
+.score {
+    font-size: 16px;
+    padding: 5px;
+    text-shadow: 1px 1px #FAFAFF;
+}
+
+.submitButton {
+    border: 0px;
+    font-family: 'Monda', sans-serif;
+    color: #060669;
+    border-radius: 5% 5%;
+    font-size: 225%;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.questionForm {
+    height: 150%;
+}
+
+.correctFeedback {
+    background-image: url('./pictures/correct-answer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: #FAFAFF;
+    border: 2px solid rgb(6,6,105);
+    border-radius: 7px;
+    box-shadow: 50%;
+}
+
+.incorrectFeedback {
+    background-image: url('./pictures/wrong-answer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: #FAFAFF;
+    border: 2px solid rgb(6,6,105);
+    border-radius: 7px;
+    box-shadow: 50%;
+    
+}
+
+.incorrectFeedback h2 {
+    font-size: 110%;
+    align-self: center;
+}
+
+.incorrectFeedback button {
+    width: 75%;
+    align-self: center;
+    border-radius: 7px;
+    border: 1px solid rgb(6,6,105);
+    box-shadow: 25%;
+    background-color: rgba(6,6,105,0.8);
+    color: #FAFAFF;
+    font-size: 150%;
+}
+
+.correctFeedback h2 {
+    font-size: 110%;
+    align-self: center;
+}
+
+.correctFeedback button {
+    width: 75%;
+    align-self: center;
+    border-radius: 7px;
+    border: 1px solid rgb(6,6,105);
+    box-shadow: 25%;
+    background-color: rgba(6,6,105,0.8);
+    color: #FAFAFF;
+    font-size: 150%;
+}
+
+button:hover {
+    background-color: #FAFAFF;
+    color: #060669;
+    cursor: grab;
+}
+
+.textBox {
+    font-size: 175%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid rgb(6,6,105);
+}
+
+label:first-child {
+    background-color: rgba(250,250,255,0.7);
+    text-shadow: none;
+    width: 100%;
+}
+
+label:nth-child(2) {
+    background-color: rgba(228,228,232,0.7);
+    text-shadow: none;
+    width: 100%;
+}
+
+label:nth-child(3) {
+    background-color: rgba(205,205,209,0.7);
+    text-shadow: none;
+    width: 100%;
+}
+
+label:nth-child(4) {
+    background-color: rgba(182,182,186,0.7);
+    text-shadow: none;
+    width: 100%;
+}
+
+label:hover {
+    background-color: rgba(6,6,105,0.6);
+    color: #FAFAFF;
+    cursor: grab;
+}
+
+input:checked{
+    background-color: #060669;
+    padding: none;
+    margin: none;
+}
+
+.answerOption {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.question-0 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 17px;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-0 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-1 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-2 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-3 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-3 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-4 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-4 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-5 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-5 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-6 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-6 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-7 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-7 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-8 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-8 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.question-9 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(6,6,105);
+    border-radius: 7px;
+}
+
+.question-9 h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 17px;
+}
+
+.highScore {
+    background-image: url('./pictures/eigth-or-more.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid rgb(6,6,105);
+}
+
+.highScore h2 {
+    text-shadow: 1px 1px #060669;
+    font-size: 35px;
+    color: gold;
+}
+
+.midScore {
+    background-image: url('./pictures/five-to-seven.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid rgb(6,6,105);
+}
+
+.midScore h2 {
+    text-shadow: 1px 1px #060669;
+    font-size: 35px;
+    color: silver;
+}
+
+.lowScore {
+    background-image: url('./pictures/four-or-less.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid rgb(6,6,105);
+}
+
+.lowScore h2 {
+    text-shadow: 1px 1px #FAFAFF;
+    font-size: 35px;
+    color: #cd7f32;
+}
+
+.restart {
+    border: 0px;
+    font-family: 'Monda', sans-serif;
+    color: #060669;
+    border-radius: 7px;
+    font-size: 30px;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(250,250,255,0.6);
+}
+
+@media screen and (min-width: 500px) {
+    .running-man-logo {
+        height: 100%;
+        width: 80%;
+    }
+
+    .question {
+        font-size: 30px;
+    }
+
+    .score {
+        font-size: 30px;
+    }
+    
+    main {
+        height: 80%;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .question-0 h2, .question-1 h2, .question-2 h2, .question-3 h2, .question-4 h2, .question-5 h2, .question-6 h2, .question-7 h2, .question-8 h2, .question-9 h2 {
+        font-size: 35px;
+    }
+
+    .question-0 .question-1 .question-2 .question-3 .question-4 .question-5 .question-6 .question-7 .question-8 .question-9 {
+        border-radius: 20px;
+    }
+
+    .radioButton {
+        width: 3em;
+        height: 3em;
+    }
+
+    h2.answerFeedback {
+        font-size: 45px;
+    }
+
+    button.nextButton {
+        font-size: 55px;
+        width: 50%;
+    }
+
+    button.submitButton {
+        font-size: 55px;
+    }
+
+    label {
+        font-size: 45px;
+    }
+
+    .startText h1 {
+        font-size: 40px;
+    }
+
+    .startText button {
+        font-size: 35px;
+    }
+
+    h2.highScoreText {
+        font-size: 60px;
+        text-shadow: 3px 3px #060669;
+    }
+
+    h2.midScoreText {
+        font-size: 60px;
+        text-shadow: 3px 3px #060669;
+    }
+
+    h2.lowScoreText {
+        font-size: 60px;
+        text-shadow: 3px 3px #060669;
+    }
+
+    .highScore {
+        border-radius: 20px;
+    }
+
+    .midScore {
+        border-radius: 20px;
+    }
+
+    .lowScore {
+        border-radius: 20px;
+    }
+
+    .textBox {
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 775px) {
+    button.nextButton {
+        font-size: 55px;
+        width: 65%;
+    }
+
+    .question {
+        padding-left: 100px;
+    }
+
+    .score {
+        padding-left: 300px;
+    }
+    
+    main {
+        width: 37%;
+        height: 95%;
+    }
+
+    .question-0 h2, .question-1 h2, .question-2 h2, .question-3 h2, .question-4 h2, .question-5 h2, .question-6 h2, .question-7 h2, .question-8 h2, .question-9 h2 {
+        font-size: 30px;
+    }
+}

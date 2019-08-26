@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Running Quiz App</title>
+        <meta name="description" content="How well do you know the sport of running?">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda&display=swap">
+    </head>
+    <body class="background">
+        <header>
+            <a href="index.html">
+                <img class="running-man-logo" src="./pictures/logo.png" alt="runner logo">
+            </a>
+            <h2 class="question">QUESTION: <span class="questionNumberContent">0</span>/10</h2>
+            <h2 class="score">SCORE: <span class="scoreCount">0</span></h2>
+        </header>
+
+        <main role="main" class="main">
+            <div class="textBox startText">
+                <h1>ARE YOU READY <br>TO HIT THE GROUND RUNNING?</h1>
+                <button type="button" class="begin">ON YOUR MARK, GET SET, GO!</button>
+            </div>
+            <div class="questionForm start"></div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="./database.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
